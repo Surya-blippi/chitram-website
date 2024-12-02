@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitram - Create Personalized Video Status</title>
+    <meta name="description" content="Create and share personalized motivational and devotional videos with your name and image">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    
+    <!-- Backup regular CSS for fallback styling -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D9488', // teal-600
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-[Inter]">
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-yellow-50 to-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        Chitram App : Whatsapp Status Maker
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Create and share customized motivational and devotional videos with your personal touch. 
+                        Add your name, image, and share directly to WhatsApp status.
+                    </p>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <img src="images/app-preview.png" alt="App Preview" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">How It Works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-semibold text-primary">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Choose Your Video</h3>
+                    <p class="text-gray-600">Select from our collection of inspiring motivational and devotional video templates</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-semibold text-primary">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Personalize It</h3>
+                    <p class="text-gray-600">Add your name and photo to make the video uniquely yours</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-teal-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-semibold text-primary">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Share & Connect</h3>
+                    <p class="text-gray-600">Share directly to WhatsApp status and gather likes from friends</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">About Chitram</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg text-gray-600">
+                    Born in Kanpur, Chitram is your creative companion for making personalized videos 
+                    that touch hearts and inspire minds. Our platform makes it easy to create and share 
+                    meaningful content with your loved ones.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Get in Touch</h2>
+            <div class="max-w-2xl mx-auto bg-gray-50 rounded-lg p-8 shadow-lg">
+                <div class="text-center">
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-lg mb-2">Address</h3>
+                        <p class="text-gray-600">
+                            128 Clyde House UGF2<br>
+                            The Mall, Kanpur - 208001<br>
+                            Uttar Pradesh, India
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2">Email</h3>
+                        <p class="text-gray-600">chitramapp@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Brand -->
+                <div>
+                    <img src="images/logo-white.png" alt="Chitram Logo" class="h-8 w-auto mb-4">
+                    <p class="text-teal-200">Express yourself through personalized videos</p>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="text-teal-200 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-teal-200 hover:text-white">Terms of Use</a></li>
+                        <li><a href="refund.html" class="text-teal-200 hover:text-white">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-teal-200 hover:text-white">About Us</a></li>
+                        <li><a href="#contact" class="text-teal-200 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-teal-700 mt-8 pt-8 text-center">
+                <p class="text-teal-200">© 2024 Chitram. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
