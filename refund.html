@@ -4,29 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing, Cancellations and Refunds - Chitram</title>
-    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow">
-        <div class="max-w-7xl mx-auto px-4 py-4">
-            <div class="flex justify-between items-center">
-                <a href="index.html" class="flex items-center">
-                    <img src="images/logo.png" alt="Chitram Logo" class="h-8">
-                </a>
-                <a href="index.html" class="text-teal-600 hover:text-teal-800">← Back to Home</a>
-            </div>
-        </div>
-    </nav>
-
     <!-- Content -->
-    <div class="max-w-4xl mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-gray-900 mb-6">Pricing, Cancellations and Refunds Policy</h1>
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">Pricing, Cancellations and Refunds Policy</h1>
         
-        <div class="bg-white rounded-lg shadow p-6 space-y-6">
+        <div class="bg-white rounded-lg shadow-lg p-8 space-y-6">
             <div>
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">Subscription Plans</h2>
-                <p class="text-gray-600 mb-4">Chitram offers premium plans to access enhanced video creation features on the app. Users can choose between two subscription options:</p>
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Subscription Plans</h2>
+                <p class="text-gray-600 mb-4">
+                    Chitram offers premium plans to access enhanced video creation features on the app. Users can choose between two subscription options:
+                </p>
                 <ul class="list-disc list-inside text-gray-600 ml-4">
                     <li>Monthly Plan (30 days validity)</li>
                     <li>Annual Plan (365 days validity)</li>
@@ -34,59 +24,104 @@
             </div>
 
             <div>
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">Subscription Terms and Payment</h2>
-                <h3 class="text-lg font-medium text-gray-900 mb-2">Recurring Subscription Fee</h3>
-                <ul class="list-disc list-inside text-gray-600 ml-4 mb-4">
-                    <li>You can access premium features by agreeing to pay the subscription fee for your chosen plan</li>
-                    <li>The subscription automatically renews unless canceled at least 24 hours before the end of the current period</li>
-                    <li>Your account will be charged for renewal up to 96 hours prior to the end of the current period</li>
-                </ul>
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Subscription Terms and Payment</h2>
+                
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Recurring Subscription Fee</h3>
+                        <ul class="list-disc list-inside text-gray-600 ml-4">
+                            <li>You can access premium features by agreeing to pay the subscription fee for your chosen plan</li>
+                            <li>The subscription automatically renews unless canceled at least 24 hours before the end of the current period</li>
+                            <li>Your account will be charged for renewal up to 96 hours prior to the end of the current period</li>
+                        </ul>
+                    </div>
 
-                <h3 class="text-lg font-medium text-gray-900 mb-2">UPI Autopay</h3>
-                <ul class="list-disc list-inside text-gray-600 ml-4">
-                    <li>Our subscription transactions in India use UPI autopay</li>
-                    <li>UPI auto-pay enables automatic renewal of your subscription</li>
-                    <li>Renewal charges are processed up to 96 hours before plan expiry</li>
-                    <li>Failed payments may be retried for up to 20 days</li>
-                </ul>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">UPI Autopay</h3>
+                        <ul class="list-disc list-inside text-gray-600 ml-4">
+                            <li>Our subscription transactions in India use UPI autopay to setup and manage subscription payments</li>
+                            <li>UPI auto-pay enables automatic renewal of your subscription before expiry, ensuring uninterrupted service</li>
+                            <li>Renewal charges are processed up to 96 hours before plan expiry to ensure continuous access to premium features</li>
+                            <li>If a subscription payment fails, we may retry charging your account for up to 20 days after the subscription expiry date</li>
+                            <li>After 20 days of failed payment attempts, your subscription will be automatically canceled</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Payment Options</h3>
+                        <p class="text-gray-600 mb-2">If you prefer not to use auto-pay, you can:</p>
+                        <ul class="list-disc list-inside text-gray-600 ml-4">
+                            <li>Uncheck the autopay option during payment</li>
+                            <li>Choose an alternative payment method available for your account</li>
+                        </ul>
+                        <p class="text-gray-600 mt-2">You can manage your subscription status through your account settings at any time</p>
+                    </div>
+                </div>
             </div>
 
             <div>
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">Cancellation Policy</h2>
-                <ul class="list-disc list-inside text-gray-600 ml-4">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Cancellation Policy</h2>
+                <ol class="list-decimal list-inside text-gray-600 space-y-2 ml-4">
                     <li>You can cancel your subscription at any time through your account settings</li>
-                    <li>Your subscription will remain active until the end of your current billing period</li>
-                    <li>You will continue to receive premium benefits until the last day of your paid period</li>
-                    <li>No partial refunds will be provided for unused periods</li>
-                </ul>
+                    <li>Upon cancellation:
+                        <ul class="list-disc list-inside ml-8 mt-2 space-y-1">
+                            <li>Your subscription will remain active until the end of your current billing period</li>
+                            <li>You will continue to receive premium benefits until the last day of your paid period</li>
+                            <li>No partial refunds will be provided for unused periods</li>
+                        </ul>
+                    </li>
+                    <li>To request cancellation, you may also email us at chitramapp@gmail.com with your registered email address</li>
+                </ol>
             </div>
 
             <div>
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">Refund Policy</h2>
-                <p class="text-gray-600 mb-4">All payments made are non-refundable. We do not provide partial refunds for:</p>
-                <ul class="list-disc list-inside text-gray-600 ml-4">
-                    <li>Unused subscription periods</li>
-                    <li>Cancellation of subscription before the end of billing period</li>
-                    <li>Change of mind or accidental purchases</li>
-                </ul>
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Refund Policy</h2>
+                <ol class="list-decimal list-inside text-gray-600 space-y-4 ml-4">
+                    <li>All payments made are non-refundable</li>
+                    <li>We do not provide partial refunds for:
+                        <ul class="list-disc list-inside ml-8 mt-2 space-y-1">
+                            <li>Unused subscription periods</li>
+                            <li>Cancellation of subscription before the end of billing period</li>
+                            <li>Change of mind or accidental purchases</li>
+                        </ul>
+                    </li>
+                    <li>Exceptions may be made in cases of:
+                        <ul class="list-disc list-inside ml-8 mt-2 space-y-1">
+                            <li>Technical errors in service delivery</li>
+                            <li>Unauthorized transactions (with proper documentation)</li>
+                        </ul>
+                    </li>
+                    <li>Refund requests, if any, must be submitted to chitramapp@gmail.com with:
+                        <ul class="list-disc list-inside ml-8 mt-2 space-y-1">
+                            <li>Your registered email address</li>
+                            <li>Transaction details</li>
+                            <li>Reason for refund request</li>
+                        </ul>
+                    </li>
+                </ol>
             </div>
 
             <div>
-                <h2 class="text-xl font-semibold text-gray-900 mb-3">Contact</h2>
-                <p class="text-gray-600">For any queries regarding pricing, cancellations, or refunds, please contact us at chitramapp@gmail.com</p>
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">General Terms</h2>
+                <ol class="list-decimal list-inside text-gray-600 space-y-2 ml-4">
+                    <li>The company reserves the right to modify subscription plans and pricing at any time</li>
+                    <li>Existing subscribers will be notified of any price changes before their next billing cycle</li>
+                    <li>In case of multiple interpretations of any terms mentioned above, the company reserves the right to make the final and binding interpretation</li>
+                    <li>All disputes will be subject to the laws of the Republic of India and the courts of Kanpur, Uttar Pradesh shall have exclusive jurisdiction</li>
+                </ol>
             </div>
 
-            <div class="text-sm text-gray-500 mt-8">
-                Last Updated: December 2024
+            <div class="mt-8">
+                <p class="text-gray-600">
+                    For any queries regarding pricing, cancellations, or refunds, please contact us at chitramapp@gmail.com
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-100 mt-12">
-        <div class="max-w-7xl mx-auto px-4 py-6">
-            <p class="text-center text-gray-600">© 2024 Chitram. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- Back to Home Link -->
+    <div class="max-w-4xl mx-auto px-4 py-8">
+        <a href="index.html" class="text-teal-600 hover:text-teal-800">← Back to Home</a>
+    </div>
 </body>
 </html>
