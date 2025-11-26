@@ -32,6 +32,7 @@ export default async function handler(req, res) {
         res.status(200).json(order);
     } catch (error) {
         console.error('Error creating Razorpay order:', error);
-        res.status(500).json({ error: 'Failed to create order', details: error.message });
+        const errorDetails = error.message || JSON.stringify(error);
+        res.status(500).json({ error: 'Failed to create order', details: errorDetails });
     }
 }
