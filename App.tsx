@@ -227,7 +227,8 @@ export default function App() {
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to create order');
+        const errorMessage = errorData.details || errorData.error || 'Failed to create order';
+        throw new Error(errorMessage);
       }
 
       const order = await response.json();
