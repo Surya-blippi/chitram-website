@@ -688,6 +688,15 @@ export default function App() {
             </button>
           </div>
           <div className="flex items-center gap-4">
+            <a
+              href="https://wa.me/918587880823"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-600 hover:text-green-600 font-medium hover:underline"
+            >
+              Need Help?
+            </a>
+            <span className="text-slate-300">|</span>
             <button
               onClick={() => {
                 const id = prompt("Enter your User ID to restore credits:");
@@ -703,7 +712,7 @@ export default function App() {
               Restore Purchases
             </button>
             <span className="text-slate-300">|</span>
-            <span>Chitram © 2024</span>
+            <span>Chitram © 2025</span>
           </div>
         </div>
       </footer>
