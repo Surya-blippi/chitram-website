@@ -226,8 +226,14 @@ export default function App() {
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        const errorMessage = errorData.details || errorData.error || 'Failed to create order';
+        let errorData;
+        try {
+          errorData = await response.json();
+        } catch (e) {
+          // If JSON parse fails, it might be an HTML error page (e.g. 404 from Vite)
+          throw new Error(`API Error ${response.status}: Non-JSON response`);
+        }
+        const errorMessage = errorData?.details || errorData?.error || `Failed to create order (${response.status})`;
         throw new Error(errorMessage);
       }
 
