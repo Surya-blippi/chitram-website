@@ -86,20 +86,24 @@ export default function App() {
         console.log('[App] 📡 Fetching data from Supabase...');
 
         // Attempt fetch from Supabase
-        const [fetchedCategories, fetchedPosters, fetchedCredits, fetchedHistory] = await Promise.all([
+        const [fetchedCategories, fetchedPosters, fetchedCredits] = await Promise.all([
           fetchCategories(),
           fetchPosters(),
-          getUserCredits(currentUserId),
-          fetchUserHistory(currentUserId)
+          getUserCredits(currentUserId)
         ]);
 
+        // Fetch history in background (don't await)
+        fetchUserHistory(currentUserId).then(h => {
+          setHistory(h || []);
+          console.log('[App] � Background loaded history:', h?.length);
+        }).catch(err => console.error('[App] ❌ Background history load failed:', err));
+
         console.log('[App] 📊 Fetched Categories:', fetchedCategories);
-        console.log('[App] 📊 Fetched Posters:', fetchedPosters);
-        console.log('[App] 💰 Fetched Credits:', fetchedCredits);
-        console.log('[App] 📜 Fetched History:', fetchedHistory?.length);
+        console.log('[App] � Fetched Posters:', fetchedPosters);
+        console.log('[App] � Fetched Credits:', fetchedCredits);
 
         setCredits(fetchedCredits);
-        setHistory(fetchedHistory || []);
+        // setHistory moved to background fetch
 
         // Validate results are not null and are valid arrays with data
         if (
